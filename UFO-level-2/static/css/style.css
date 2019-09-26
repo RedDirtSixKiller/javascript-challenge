@@ -35,7 +35,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
+  background: whitesmoke;
 }
 
 .navbar {
@@ -138,6 +138,11 @@ select {
   color: #8e979f;
 }
 
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: rgb(39, 38, 38); // Choose your own color here
+ }
+
 /* media queries which will only be activated at specific screen sizes */
 @media (max-width: 800px) {
   #table-area td {
@@ -170,7 +175,7 @@ select {
   }
 
   #table-area td {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   #table-area tbody td {
@@ -189,6 +194,12 @@ select {
   .hero h1 {
     animation: smaller-title 1.2s forwards linear;
   }
+}
+
+tfoot input {
+  width: 100%;
+  padding: 3px;
+  box-sizing: border-box;
 }
 
 /* keyframe animations which will be used to animate the title */
